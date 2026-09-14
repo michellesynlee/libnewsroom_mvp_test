@@ -108,6 +108,7 @@ function cardInnerHTML(story) {
 function renderCard(story) {
   const el = document.createElement("article");
   el.className = "card";
+  el.dataset.id = story.id;
   el.innerHTML = cardInnerHTML(story);
   return el;
 }
@@ -179,9 +180,10 @@ async function init() {
   sectionEl.addEventListener("change", render);
 
   cardsEl.addEventListener("click", (e) => {
-    const btn = e.target.closest(".question");
-    if (!btn) return;
-    const story = stories.find((s) => s.id === btn.dataset.id);
+    if (e.target.closest(".claim-btn")) return;
+    const card = e.target.closest(".card");
+    if (!card) return;
+    const story = stories.find((s) => s.id === card.dataset.id);
     if (story) openModal(story);
   });
 
