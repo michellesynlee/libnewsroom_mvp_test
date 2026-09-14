@@ -57,7 +57,7 @@ body {
   height: 174px;
   object-fit: cover;
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: 3px;
   background: #f2f2f2;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
 }
@@ -130,7 +130,7 @@ main {
   font-size: 1.1rem;
   padding: 14px 16px;
   border: 2px solid var(--ink);
-  border-radius: 6px;
+  border-radius: 3px;
   background: white;
   color: var(--ink);
 }
@@ -167,7 +167,7 @@ main {
 
 .card {
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: 3px;
   padding: 16px;
   background: white;
   display: flex;
@@ -193,7 +193,7 @@ main {
 
 .tag {
   padding: 3px 10px;
-  border-radius: 999px;
+  border-radius: 3px;
   border: none;
   background: #e8e2d6;
   color: var(--ink);
@@ -257,7 +257,7 @@ main {
   color: white;
   text-decoration: none;
   padding: 10px 16px;
-  border-radius: 4px;
+  border-radius: 3px;
   font-size: 1rem;
   font-weight: 600;
   font-family: inherit;
@@ -297,7 +297,7 @@ main {
 .modal {
   position: relative;
   background: white;
-  border-radius: 8px;
+  border-radius: 4px;
   max-width: 680px;
   width: 100%;
   max-height: 85vh;
